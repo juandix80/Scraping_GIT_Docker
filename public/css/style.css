@@ -1,0 +1,20 @@
+h2 {
+    color: black;
+}
+
+.precio_producto {
+    color: blue;
+}
+
+.descripcion_producto {
+    color: black;
+}
+
+.container {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+img {
+    width: 200px;
+}

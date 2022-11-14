@@ -1,0 +1,115 @@
+Instalación previa de GIT:
+https://git-scm.com/download/win
+
+Escogemos la versión (Standalone Installer):
+64-bit Git for Windows Setup.
+
+
+INSTRUCCIONES PARA REALIZAR EL GIT:
+1- Para crear un repositorio local:
+git init
+
+2- Para comprobar los cambios locales sin commits
+git status
+
+Nos aparecerá por pantalla:
+On branch main
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .gitignore
+        Ejercicio_previo_evaluacion.txt
+        Scraping - GIT - Docker/
+
+
+3- Stage de los cambios de los ficheros pre-commit:
+git add .gitignore
+O para añadirlo TODO:
+git add .
+
+Nos aparecerá por pantalla lo siguiente:
+warning: in the working copy of 'Scraping - GIT - Docker/ejercicio/package-lock.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Scraping - GIT - Docker/ejercicio/package.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Scraping - GIT - Docker/package-lock.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'Scraping - GIT - Docker/package.json', LF will be replaced by CRLF the next time Git touches it
+
+
+Nota:
+Hacemos un 'git status' y veremos por pantalla como se encuentra todo para realizar el commit, nos aparecerá lo siguiente:
+On branch main
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   .gitignore
+        new file:   Ejercicio_previo_evaluacion.txt
+        new file:   Scraping - GIT - Docker/.dockerignore
+        new file:   Scraping - GIT - Docker/docker.txt
+        new file:   Scraping - GIT - Docker/dockerfile
+        new file:   Scraping - GIT - Docker/ejercicio/index.js
+        new file:   Scraping - GIT - Docker/ejercicio/package-lock.json
+        new file:   Scraping - GIT - Docker/ejercicio/package.json
+        new file:   Scraping - GIT - Docker/ejercicio/public/css/style.css
+        new file:   Scraping - GIT - Docker/ejercicio/public/index.html
+        new file:   Scraping - GIT - Docker/ejercicio/public/js/app.js
+        new file:   Scraping - GIT - Docker/git.txt
+        new file:   Scraping - GIT - Docker/package-lock.json
+        new file:   Scraping - GIT - Docker/package.json
+        new file:   Scraping - GIT - Docker/src/app.js
+        new file:   Scraping - GIT - Docker/src/index.js
+        new file:   Scraping - GIT - Docker/src/routes/route.js
+
+
+4- Hacemos un commit con message:
+git commit -m 'Ejercicios pre-evalución Scraping - GIT - Docker'
+
+Nos aparecerá por pantalla:
+[main 8d3d420] Ejercicios pre-evalución Scraping - GIT - Docker
+ 17 files changed, 3476 insertions(+)
+ create mode 100644 .gitignore
+ create mode 100644 Ejercicio_previo_evaluacion.txt
+ create mode 100644 Scraping - GIT - Docker/.dockerignore
+ create mode 100644 Scraping - GIT - Docker/docker.txt
+ create mode 100644 Scraping - GIT - Docker/dockerfile
+ create mode 100644 Scraping - GIT - Docker/ejercicio/index.js
+ create mode 100644 Scraping - GIT - Docker/ejercicio/package-lock.json
+ create mode 100644 Scraping - GIT - Docker/ejercicio/package.json
+ create mode 100644 Scraping - GIT - Docker/ejercicio/public/css/style.css
+ create mode 100644 Scraping - GIT - Docker/ejercicio/public/index.html
+ create mode 100644 Scraping - GIT - Docker/ejercicio/public/js/app.js
+ create mode 100644 Scraping - GIT - Docker/git.txt
+ create mode 100644 Scraping - GIT - Docker/package-lock.json
+ create mode 100644 Scraping - GIT - Docker/package.json
+ create mode 100644 Scraping - GIT - Docker/src/app.js
+ create mode 100644 Scraping - GIT - Docker/src/index.js
+ create mode 100644 Scraping - GIT - Docker/src/routes/route.js
+
+
+5- Voy a mi github:
+https://github.com/juandix80
+
+Pulso en Repositories, y luego pulsamos New. Introducimos en:
+Repository name: <Nombre de como se llamará el repositorio> --> 'Ejercicio_previo_evalucion'
+Description: <Introducimos la información de que va el repositorio> --> 'Scraping - GIT - Docker'
+Marcamos --> Public
+
+
+6- Añades la URL del repositorio al proyecto
+git remote add origin https://github.com/juandix80/Ejercicio_previo_evaluacion.git
+
+7- Creación en la rama que toca, en este caso es main:
+git branch -M main
+
+8- Publicamos y establecemos que la rama principal es main:
+git push -u origin main
+
+Nota: Al ejecutar los pasos 6, 7 y 8 a la vez nos aparecerá por pantalla:
+Enumerating objects: 31, done.
+Counting objects: 100% (31/31), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (25/25), done.
+Writing objects: 100% (31/31), 29.72 KiB | 2.97 MiB/s, done.
+Total 31 (delta 3), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (3/3), done.
+To https://github.com/juandix80/Ejercicio_previo_evaluacion.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+
+

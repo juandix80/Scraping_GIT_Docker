@@ -1,0 +1,20 @@
+Incluimos en el package.json:
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/index.js"
+  },
+
+1 - Instrucción para crear un contenedor de DOCKER con el TERMINAL:
+docker build -t node_scraping_git_docker .
+
+2 - Para ejecutar la aplicación docker, ponemos en el Terminal:
+docker run -d -p 4000:4000 node_scraping_git_docker
+
+3- Para verlo:
+docker ps
+
+CONTAINER ID   IMAGE                      COMMAND                  CREATED          STATUS          PORTS                    NAMES
+6f63da2e5573   node_scraping_git_docker   "docker-entrypoint.s…"   19 seconds ago   Up 17 seconds   0.0.0.0:4000->4000/tcp   festive_sammet
+
+4- Para pararlo:
+docker stop 6f63da2e5573
